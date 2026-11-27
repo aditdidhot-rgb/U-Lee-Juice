@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U LEE JUICE — Fresh Healthy Happier</title>
+  <meta name="description"
+    content="U LEE JUICE — Fresh Healthy Happier. Fresh Juice & Delicious Snacks. Katalog produk resmi jus buah segar, fresh juice mix, minuman non-juice, cemilan, seblak, dan topping.">
+  <meta name="theme-color" content="#204B25">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#menu">Skip to Menu</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="nav-brand" aria-label="U LEE JUICE Home">
+        <img src="images/logo.png" alt="Logo U LEE JUICE" class="nav-logo" width="46" height="46">
+        <span class="nav-brand-name">U LEE JUICE</span>
+      </a>
+
+      <input type="checkbox" id="navToggleCheck" class="sr-only-control" aria-hidden="true">
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <label
+        for="navToggleCheck"
+        class="hamburger-btn"
+        id="navToggleBtn"
+        aria-label="Toggle Menu"
+        aria-controls="navMenu"
+        role="button"
+        tabindex="0"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-brand-mark">
+            <img src="images/logo.png" alt="U LEE JUICE Emblem" class="hero-emblem" width="76" height="76">
+            <div class="hero-brand-meta">
+              <span class="hero-brand-label">U LEE JUICE</span>
+              <span class="hero-brand-divider" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            FRESH<br>
+            HEALTHY<br>
+            <span class="hero-title-accent">HAPPIER</span>
+          </h1>
+
+          <p class="hero-subtitle">Fresh Juice &amp; Delicious Snacks</p>
+
+          <a href="#menu" class="hero-scroll-link">
+            <span>Explore Our Menu</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v14.17l4.59-4.58L18 15l-6 6-6-6 1.41-1.41L11 18.17V4h1z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-frame">
+            <img src="images/hero.jpg" alt="Komposisi jus buah segar U LEE JUICE" class="hero-image" width="720"
+              height="840">
+          </div>
+          <div class="hero-fruit-accent hero-accent-yellow" aria-hidden="true"></div>
+          <div class="hero-fruit-accent hero-accent-orange" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU CATALOG SECTION ================= -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Editorial Showcase</span>
+          <h2 class="section-title">OUR MENU</h2>
+        </div>
+
+        <input type="radio" name="menu-cat" id="cat-all" class="sr-only-control" checked>
+        <input type="radio" name="menu-cat" id="cat-fresh-juice" class="sr-only-control">
+        <input type="radio" name="menu-cat" id="cat-fresh-juice-mix" class="sr-only-control">
+        <input type="radio" name="menu-cat" id="cat-non-juice" class="sr-only-control">
+        <input type="radio" name="menu-cat" id="cat-cemilan" class="sr-only-control">
+        <input type="radio" name="menu-cat" id="cat-seblak" class="sr-only-control">
+        <input type="radio" name="menu-cat" id="cat-topping" class="sr-only-control">
+
+        <div class="category-bar reveal">
+          <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Menu Categories">
+            <label for="cat-all" class="category-tab" data-category="all" role="tab" tabindex="0">All Menu</label>
+            <label for="cat-fresh-juice" class="category-tab" data-category="fresh-juice" role="tab" tabindex="0">Fresh Juice</label>
+            <label for="cat-fresh-juice-mix" class="category-tab" data-category="fresh-juice-mix" role="tab" tabindex="0">Fresh Juice Mix</label>
+            <label for="cat-non-juice" class="category-tab" data-category="non-juice" role="tab" tabindex="0">Non Juice</label>
+            <label for="cat-cemilan" class="category-tab" data-category="cemilan" role="tab" tabindex="0">Cemilan</label>
+            <label for="cat-seblak" class="category-tab" data-category="seblak" role="tab" tabindex="0">Seblak</label>
+            <label for="cat-topping" class="category-tab" data-category="topping" role="tab" tabindex="0">Topping</label>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <!-- Rendered cleanly by js/script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-gallery reveal">
+          <figure class="about-photo-main">
+            <img src="images/products/jus-alpukat.jpg" alt="Jus Alpukat U LEE JUICE" loading="lazy" width="520"
+              height="520">
+          </figure>
+          <figure class="about-photo-secondary">
+            <img src="images/products/es-teler.jpg" alt="Es Teler U LEE JUICE" loading="lazy" width="380" height="380">
+          </figure>
+          <div class="about-seal">
+            <img src="images/logo.png" alt="Logo U LEE JUICE" width="82" height="82">
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="section-title">ABOUT U LEE JUICE</h2>
+          <p class="about-text">
+            U LEE JUICE menghadirkan berbagai pilihan jus buah segar, minuman favorit, dan cemilan lezat untuk menemani
+            harimu.
+          </p>
+          <div class="about-signature">
+            <span class="about-signature-dot" aria-hidden="true"></span>
+            <span>Fresh Healthy Happier</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= CONTACT & MINIMALIST FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#home" class="footer-brand-link" aria-label="Kembali ke atas">
+            <img src="images/logo.png" alt="Logo U LEE JUICE" class="footer-logo" width="64" height="64">
+            <div>
+              <h3 class="footer-brand-name">U LEE JUICE</h3>
+              <p class="footer-tagline">Fresh Healthy Happier</p>
+            </div>
+          </a>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <span class="footer-heading">Navigation</span>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <span class="footer-heading">Visit &amp; Contact</span>
+          <ul class="footer-contact-list">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285740602334"
+                rel="noopener noreferrer"
+                class="footer-contact-link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A11.9 11.9 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 2.2 12c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8zm5.4-7.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" />
+                </svg>
+                <span>WhatsApp: 085740602334</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/xxgviFwp5TJLemdB6"
+                rel="noopener noreferrer"
+                class="footer-contact-link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
+                </svg>
+                <span>Google Maps — Lokasi Toko</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> U LEE JUICE. Fresh Healthy Happier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MINIMAL PHOTO LIGHTBOX ================= -->
+  <div class="lightbox-backdrop" id="lightboxBackdrop" hidden>
+    <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button type="button" class="lightbox-close" id="closeLightboxBtn" aria-label="Tutup foto">&times;</button>
+      <div class="lightbox-media">
+        <img id="lightboxImage" src="images/hero.jpg" alt="" class="lightbox-img">
+      </div>
+      <h3 id="lightboxTitle" class="lightbox-title">Nama Produk</h3>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
